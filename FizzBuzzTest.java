@@ -31,4 +31,11 @@ public class FizzBuzzTest {
         String result = fizzBuzz.getString(testNum);
         Assert.assertEquals(Integer.toString(testNum), result);
     }
+
+    @Test
+    public void testNumberContainsThree() {
+        int testNum = 31;
+        String result = fizzBuzz.getString(testNum);
+        Assert.assertEquals("Fizz", result);
+    }
 }
