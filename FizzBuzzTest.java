@@ -18,4 +18,10 @@ public class FizzBuzzTest {
         String result = fizzBuzz.getString(5);
         Assert.assertEquals("Buzz", result);
     }
+
+    @Test
+    public void testDivThreeAndFive() {
+        String result = fizzBuzz.getString(15);
+        Assert.assertEquals("FizzBuzz", result);
+    }
 }
