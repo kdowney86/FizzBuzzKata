@@ -7,6 +7,7 @@ public class FizzBuzz {
 
     public String getString(int number) {
         if (number % 3 == 0) return FIZZ;
+        if (number % 5 == 0) return "Buzz";
         return null;
     }
 
