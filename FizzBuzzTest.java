@@ -24,4 +24,11 @@ public class FizzBuzzTest {
         String result = fizzBuzz.getString(15);
         Assert.assertEquals("FizzBuzz", result);
     }
+
+    @Test
+    public void testNonDivisibleNumber() {
+        int testNum = 28;
+        String result = fizzBuzz.getString(testNum);
+        Assert.assertEquals(Integer.toString(testNum), result);
+    }
 }
