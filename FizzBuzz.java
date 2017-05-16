@@ -3,8 +3,10 @@
  */
 public class FizzBuzz {
 
+    public static final String FIZZ = "Fizz";
+
     public String getString(int number) {
-        if (number % 3 == 0) return "Fizz";
+        if (number % 3 == 0) return FIZZ;
         return null;
     }
 
