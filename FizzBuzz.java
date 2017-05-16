@@ -14,6 +14,7 @@ public class FizzBuzz {
         if (number % 5 == 0) {
             result += BUZZ;
         }
+        if (result.length() == 0) result = Integer.toString(number);
         return result;
     }
 
