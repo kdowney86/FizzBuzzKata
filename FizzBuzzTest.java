@@ -12,4 +12,10 @@ public class FizzBuzzTest {
         String result = fizzBuzz.getString(3);
         Assert.assertEquals("Fizz", result);
     }
+
+    @Test
+    public void testDivFive() {
+        String result = fizzBuzz.getString(5);
+        Assert.assertEquals("Buzz", result);
+    }
 }
