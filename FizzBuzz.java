@@ -8,7 +8,7 @@ public class FizzBuzz {
 
     public String getString(int number) {
         String result = "";
-        if (number % 3 == 0 || Integer.toString(number).contains("3")) {
+        if (containsOrIsDivisibleBy(number, 3)) {
             result += FIZZ;
         }
         if (number % 5 == 0) {
@@ -16,6 +16,11 @@ public class FizzBuzz {
         }
         if (result.length() == 0) result = Integer.toString(number);
         return result;
+    }
+
+    private boolean containsOrIsDivisibleBy(int number, int testNum) {
+        String testString = Integer.toString(testNum);
+        return number % 3 == 0 || Integer.toString(number).contains(testString);
     }
 
 }
