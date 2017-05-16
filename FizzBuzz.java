@@ -8,7 +8,7 @@ public class FizzBuzz {
 
     public String getString(int number) {
         String result = "";
-        if (number % 3 == 0) {
+        if (number % 3 == 0 || Integer.toString(number).contains("3")) {
             result += FIZZ;
         }
         if (number % 5 == 0) {
