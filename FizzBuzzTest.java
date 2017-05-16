@@ -38,4 +38,11 @@ public class FizzBuzzTest {
         String result = fizzBuzz.getString(testNum);
         Assert.assertEquals("Fizz", result);
     }
+
+    @Test
+    public void testNumberContainsFive() {
+        int testNum = 52;
+        String result = fizzBuzz.getString(testNum);
+        Assert.assertEquals("Buzz", result);
+    }
 }
