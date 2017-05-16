@@ -5,7 +5,7 @@ import org.junit.jupiter.api.Test;
  */
 public class FizzBuzzTest {
 
-    private FizzBuzz fizzBuzz;
+    private FizzBuzz fizzBuzz = new FizzBuzz();
 
     @Test
     public void testDivThree() {
