@@ -40,4 +40,17 @@ public class FizzBuzzTest {
         //then
         Assert.assertEquals(expected, result);
     }
+
+    @Test
+    public void testNumberContainsThree() {
+        //given
+        int testNumber = 23;
+        String expected = FIZZ;
+
+        //when
+        String result = fizzBuzz.getString(testNumber);
+
+        //then
+        Assert.assertEquals(expected, result);
+    }
 }
