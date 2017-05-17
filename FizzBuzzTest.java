@@ -27,4 +27,17 @@ public class FizzBuzzTest {
         String result = fizzBuzz.getString(15);
         Assert.assertEquals(FIZZ + BUZZ, result);
     }
+
+    @Test
+    public void testDivByNeitherThreeNorFive() {
+        //given
+        int testNumber = 14;
+        String expected = Integer.toString(testNumber);
+
+        //when
+        String result = fizzBuzz.getString(testNumber);
+
+        //then
+        Assert.assertEquals(expected, result);
+    }
 }
