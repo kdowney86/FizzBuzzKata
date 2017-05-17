@@ -7,13 +7,11 @@ public class FizzBuzz {
     public static final String BUZZ = "buzz";
 
     public String getString(int number) {
+        String result = "";
+        if (number % 3 == 0) result += FIZZ;
+        if (number % 5 == 0) result += BUZZ;
 
-        if (number % 3 == 0 && number % 5 ==0) return FIZZ + BUZZ;
-        if (number % 3 == 0) return FIZZ;
-        if (number % 5 == 0) return BUZZ;
-
-
-        return null;
+        return result;
     }
 
 }
