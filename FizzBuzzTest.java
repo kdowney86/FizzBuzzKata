@@ -21,4 +21,10 @@ public class FizzBuzzTest {
         String result = fizzBuzz.getString(5);
         Assert.assertEquals(BUZZ, result);
     }
+
+    @Test
+    public void testDivByThreeAndFive() {
+        String result = fizzBuzz.getString(15);
+        Assert.assertEquals(FIZZ + BUZZ, result);
+    }
 }
