@@ -12,7 +12,7 @@ public class FizzBuzz {
     public String getString(int number) {
         String result = "";
         if (containsOrIsDivisibleBy(number, FIZZ_NUMBER)) result += FIZZ;
-        if (number % BUZZ_NUMBER == 0) result += BUZZ;
+        if (containsOrIsDivisibleBy(number, BUZZ_NUMBER)) result += BUZZ;
 
         if (result.length() == 0) result = Integer.toString(number);
         return result;
