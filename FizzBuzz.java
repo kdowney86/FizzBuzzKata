@@ -18,7 +18,7 @@ public class FizzBuzz {
 
     public String getString(int number) {
         String result = "";
-        if (number % 3 == 0) result = fizzStrategy.getResult();
+        if (number % 3 == 0 || Integer.toString(number).contains("3")) result = fizzStrategy.getResult();
         if (number % 5 == 0) result = buzzStrategy.getResult();
         if (number % 3 == 0 &&  number % 5 == 0) result = fizzBuzzStrategy.getResult();
 
