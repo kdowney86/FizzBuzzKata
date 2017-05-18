@@ -33,4 +33,16 @@ public class FizzBuzzTest {
         //then
         Assert.assertEquals(BUZZ, result);
     }
+
+    @Test
+    public void testReturnFizzBuzzWhenDivisibleBy3and5() {
+        //given
+        int testNumber = 15;
+
+        //when
+        String result = fizzBuzz.getString(testNumber);
+
+        //then
+        Assert.assertEquals(FIZZ + BUZZ, result);
+    }
 }
