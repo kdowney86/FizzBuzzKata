@@ -57,7 +57,7 @@ public class FizzBuzzTest {
         //then
         Assert.assertEquals(Integer.toString(testNumber), result);
     }
-    
+
     @Test
     public void testNumberContains3() {
         //given
