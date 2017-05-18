@@ -4,6 +4,6 @@
 public class FizzBuzz {
 
     public String getString(int number) {
-        return null;
+        return "fizz";
     }
 }
