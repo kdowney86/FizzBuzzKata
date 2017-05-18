@@ -3,7 +3,9 @@
  */
 public class FizzBuzz {
 
+    public static final String FIZZ = "fizz";
+
     public String getString(int number) {
-        return "fizz";
+        return FIZZ;
     }
 }
