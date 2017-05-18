@@ -45,4 +45,16 @@ public class FizzBuzzTest {
         //then
         Assert.assertEquals(FIZZ + BUZZ, result);
     }
+
+    @Test
+    public void testNumbersNotDivisibleBy3Or5() {
+        //given
+        int testNumber = 13;
+
+        //when
+        String result = fizzBuzz.getString(testNumber);
+
+        //then
+        Assert.assertEquals(Integer.toString(testNumber), result);
+    }
 }
