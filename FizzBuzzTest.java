@@ -23,7 +23,7 @@ public class FizzBuzzTest {
     }
 
     @Test
-    public void testReturnBuzzWhenDivisibleBy3() {
+    public void testReturnBuzzWhenDivisibleBy5() {
         //given
         int testNumber = 5;
 
