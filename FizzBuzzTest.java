@@ -8,6 +8,7 @@ public class FizzBuzzTest {
     FizzBuzz fizzBuzz = new FizzBuzz();
 
     public static final String FIZZ = "fizz";
+    public static final String BUZZ = "buzz";
 
     @Test
     public void testReturnFizzWhenDivisibleBy3() {
@@ -19,5 +20,17 @@ public class FizzBuzzTest {
 
         //then
         Assert.assertEquals(FIZZ, result);
+    }
+
+    @Test
+    public void testReturnBuzzWhenDivisibleBy3() {
+        //given
+        int testNumber = 5;
+
+        //when
+        String result = fizzBuzz.getString(testNumber);
+
+        //then
+        Assert.assertEquals(BUZZ, result);
     }
 }
