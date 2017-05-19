@@ -9,9 +9,12 @@ public class FizzBuzz {
     public String getString(int number) {
         String result = "";
 
-        if (number % 3 == 0) result = FIZZ;
-        if (number % 5 == 0) result = BUZZ;
-
+        if (number % 3 == 0 && number % 5 == 0) {
+            result = FIZZ + BUZZ;
+        } else {
+            if (number % 3 == 0) result = FIZZ;
+            if (number % 5 == 0) result = BUZZ;
+        }
         return result;
     }
 }
