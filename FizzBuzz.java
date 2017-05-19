@@ -31,6 +31,8 @@ public class FizzBuzz {
             if (responseString.length() > 0) break;
         }
 
+        if (responseString.length() == 0) responseString = Integer.toString(number);
+
         return responseString;
     }
 }
