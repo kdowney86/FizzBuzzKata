@@ -46,4 +46,16 @@ public class FizzBuzzTest {
         Assert.assertEquals(FIZZ +  BUZZ, result);
     }
 
+    @Test
+    public void testNumberDivisibleByNeitherReturnsNumber() {
+        //given
+        int testNumber = 11;
+
+        //when
+        String result = fizzBuzz.getString(testNumber);
+
+        //then
+        Assert.assertEquals(Integer.toString(testNumber), result);
+    }
+
 }
