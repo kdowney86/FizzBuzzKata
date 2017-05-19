@@ -10,9 +10,6 @@ import java.util.ArrayList;
  */
 public class FizzBuzz {
 
-    public static final String FIZZ = "fizz";
-    public static final String BUZZ = "buzz";
-
     ArrayList<KataStrategy> strategies;
 
     public FizzBuzz() {
