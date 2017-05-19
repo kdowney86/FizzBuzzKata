@@ -9,6 +9,7 @@ public class FizzStrategy implements KataStrategy {
 
 
     public static final String FIZZ = "fizz";
+    public static final int FIZZ_NUM = 3;
 
     @Override
     public String execute(int number) {
@@ -23,6 +24,14 @@ public class FizzStrategy implements KataStrategy {
     }
 
     private boolean validate(int number) {
-        return number % 3 == 0 || Integer.toString(number).contains("3");
+        return isDivisibleBy(number) || numberContains(number);
+    }
+
+    private boolean numberContains(int number) {
+        return Integer.toString(number).contains(Integer.toString(FIZZ_NUM));
+    }
+
+    private boolean isDivisibleBy(int number) {
+        return number % FIZZ_NUM == 0;
     }
 }
