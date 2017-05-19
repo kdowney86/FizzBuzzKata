@@ -8,13 +8,7 @@ public class FizzBuzzTest {
 
     public static final String FIZZ = "fizz";
 
-    private FizzBuzz fizzBuzz;
-
-    @Before
-    private void setUp() {
-        fizzBuzz = new FizzBuzz();
-    }
-
+    private FizzBuzz fizzBuzz = new FizzBuzz();
 
     @Test
     public void testThreeReturnsFizz() {
