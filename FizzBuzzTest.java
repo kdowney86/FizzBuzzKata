@@ -34,4 +34,16 @@ public class FizzBuzzTest {
         Assert.assertEquals(BUZZ, result);
     }
 
+    @Test
+    public void testNumberDivisibleByBothReturnsFizzBuzz() {
+        //given
+        int testNumber = 15;
+
+        //when
+        String result = fizzBuzz.getString(testNumber);
+
+        //then
+        Assert.assertEquals(FIZZ +  BUZZ, result);
+    }
+
 }
