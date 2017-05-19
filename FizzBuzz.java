@@ -1,3 +1,10 @@
+import Strategy.KataStrategy;
+import Strategy.StrategyImpl.BuzzStrategy;
+import Strategy.StrategyImpl.FizzBuzzStrategy;
+import Strategy.StrategyImpl.FizzStrategy;
+
+import java.util.ArrayList;
+
 /**
  * Created by kelvin on 15/05/17.
  */
@@ -6,15 +13,27 @@ public class FizzBuzz {
     public static final String FIZZ = "fizz";
     public static final String BUZZ = "buzz";
 
-    public String getString(int number) {
-        String result = "";
+    ArrayList<KataStrategy> strategies;
 
-        if (number % 3 == 0 && number % 5 == 0) {
-            result = FIZZ + BUZZ;
-        } else {
-            if (number % 3 == 0) result = FIZZ;
-            if (number % 5 == 0) result = BUZZ;
-        }
+    public FizzBuzz() {
+        strategies = new ArrayList<>();
+        strategies.add(new FizzBuzzStrategy());
+        strategies.add(new FizzStrategy());
+        strategies.add(new BuzzStrategy());
+    }
+
+    public String getString(int number) {
+        String result = buildResponseString(number);
         return result;
+    }
+
+    public String buildResponseString(int number) {
+        String responseString = "";
+        for (int i = 0; i < strategies.size(); i++) {
+            responseString = strategies.get(i).execute(number);
+            if (responseString.length() > 0) break;
+        }
+
+        return responseString;
     }
 }
