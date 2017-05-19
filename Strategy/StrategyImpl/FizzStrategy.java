@@ -23,6 +23,6 @@ public class FizzStrategy implements KataStrategy {
     }
 
     private boolean validate(int number) {
-        return number % 3 == 0;
+        return number % 3 == 0 || Integer.toString(number).contains("3");
     }
 }
