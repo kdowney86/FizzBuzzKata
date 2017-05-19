@@ -58,4 +58,16 @@ public class FizzBuzzTest {
         Assert.assertEquals(Integer.toString(testNumber), result);
     }
 
+    @Test
+    public void testNumberContainsThreeReturnsFizz() {
+        //given
+        int testNumber = 13;
+
+        //when
+        String result = fizzBuzz.getString(testNumber);
+
+        //then
+        Assert.assertEquals(FIZZ, result);
+    }
+
 }
